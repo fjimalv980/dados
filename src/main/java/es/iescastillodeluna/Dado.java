@@ -64,4 +64,17 @@ public class Dado {
         registro.add(AleatorioEntre(1,6));
         return getUtimo();
     }
+
+    /**
+     * Cantidad de veces que se ha lanzado el dado.
+     * @return Número de veces que se ha lanzado el dado.
+     */
+    public int tiradas() {
+        return registro.size();
+    }
+
+    @Override
+    public String toString() {
+        return Integer.toString(getUtimo());
+    }
 }
